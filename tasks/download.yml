@@ -1,11 +1,11 @@
 ---
-- name: Download terraform archive Linux 32 bits
+- name: Download packer archive Linux 32 bits
   get_url:
     url: "https://releases.hashicorp.com/packer/{{ packer_version }}/packer_{{ packer_version }}_linux_386.zip"
     dest: /tmp/packer-{{ packer_version }}.zip
   when: "'32' in ansible_architecture and 'Linux' == ansible_system"
 
-- name: Download terraform archive Linux 64 bits
+- name: Download packer archive Linux 64 bits
   get_url:
     url: "https://releases.hashicorp.com/packer/{{ packer_version }}/packer_{{ packer_version }}_linux_amd64.zip"
     dest: /tmp/packer-{{ packer_version }}.zip
