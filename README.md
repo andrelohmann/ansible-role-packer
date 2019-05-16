@@ -13,7 +13,7 @@ This role requires ubuntu.
 Role Variables
 --------------
 
-    packer_version: 1.3.3
+    packer_version: 1.4.1
 
 Example Playbook
 ----------------
